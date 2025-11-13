@@ -13,7 +13,7 @@ public class Collatz {
                 System.out.print(current + " ");
             }
 
-            while (current != 1) {
+            do {
                 if (current % 2 == 0) {
                     current = current / 2;
                 } else {
@@ -25,7 +25,7 @@ public class Collatz {
                 if (isVMode) {
                     System.out.print(current + " ");
                 }
-            }
+            }while (current != 1);
 
             if (isVMode) {
                 System.out.println("(" + steps + ")");
