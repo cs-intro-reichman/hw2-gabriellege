@@ -3,10 +3,10 @@ public class Collatz {
 	public static void main(String args[]) {
         int N = Integer.parseInt(args[0]);
         String mode = args[1];
-		int steps = 1;
 		boolean isVMode = mode.equals("v"); 
 		
         for (int seed = 1; seed <= N; seed++) {
+			int steps = 1;
             int current = seed;
 
             if (isVMode) {
